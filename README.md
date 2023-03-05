@@ -3,7 +3,9 @@
 First you will need to download the .pt file to extract the parameters of the whole model then extract the Encoder and HyperpriorAnalysis module's parameters, Links : 
 
 HIFI high : https://docs.google.com/uc?export=download&id=1BFYpvhVIA_Ek2QsHBbKnaBE8wn1GhFyA
+
 HIFI Mid : https://docs.google.com/uc?export=download&id=1QNoX0AGKTBkthMJGPfQI0dT0_tnysYUb
+
 HIFI Low : https://docs.google.com/uc?export=download&id=1hfFTkZbs_VOBmXQ-M4bYEPejrD76lAY9
 
 The Average size of the .pt file is 1.8 Gb, then add the path when making the load dictionnary 
