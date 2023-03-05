@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 import tensorflow as tf
-from src.normalisation import channel, instance
+import channel, instance
 import torchvision.transforms as transforms
 import PIL.Image as Image
 import visualkeras
