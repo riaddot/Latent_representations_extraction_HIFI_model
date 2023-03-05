@@ -177,7 +177,7 @@ input_torch[0,:,:,:]=img_tensor
 B = input_torch.shape[0]
 x_dims = tuple(input_torch.size())
 # %% Loading weights of the model 
-load = torch.load(r"C:\Users\TEMMMAR\Desktop\Hifi_local\Chekpoint\hific-high.pt")
+load = torch.load(r"hific-high.pt path")
 # %% Extracting Encoder/Hyper analysis weights
 new_state_dict = {}
 for name, weight in load['model_state_dict'].items():
