@@ -201,34 +201,13 @@ for key, value in new_state_dict3.items():
 
 
 
-#%%
-# new_state_dict5 = {}
-# for name, weight in load['model_state_dict'].items():
-#     if 'Generator' in name:
-#         new_state_dict5[name] = weight
-
-# new_state_dict6 = {}
-# for key, value in new_state_dict5.items():
-#     new_key = key.replace("Generator.", "")
-#     new_state_dict6[new_key] = value 
-# new_state_dict = {}
-# for key, value in new_state_dict1.items():
-#     if key == "conv_block_out.1.weight":
-#         new_value = value[:3, ...]  # slice first 3 channels
-#         new_state_dict[key] = new_value
-#     elif key == "conv_block_out.1.bias":
-#         new_value = value[:3]  # slice first 3 elements
-#         new_state_dict[key] = new_value
-#     else:
-#         new_state_dict[key] = value
-
 #%% Implementing weights 
 model= Encoder(image_dims=x_dims[1:], batch_size=B, C=220)
 model.load_state_dict(new_state_dict1,strict=False)
 #%%
 Hyper= HyperpriorAnalysis()
 Hyper.load_state_dict(new_state_dict4, strict=False)
-#%%
+#%% For architecture
 # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # model = model.to(device)
 # summary(model, input_size=(3, 256, 256))
